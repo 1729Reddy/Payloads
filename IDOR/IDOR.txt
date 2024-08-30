@@ -1,0 +1,18 @@
+10) api/v1/users/all		(find valid uuid)
+11) api/user/1234/../1235/profile or userid:"1234/../1235"
+12)  Manipulate JSON fields with arrays, booleans, wildcards, or large integers.
+1) Change userid and timestamp or token
+2) https://web.archive.org/cdx/search/cdx?url=https%3A%2F%2Fexample.com%2F*&output=text&fl=original&collapse=urlkey 
+3) id=4&id=5 
+4) id=00005
+5) id=-1
+6) id=5.0
+7) change method
+8) api/v2 --> api/v1
+9) api/user/me --> api/user/1
+	api/v1/user/list
+	api/v1/users
+Example: { "user_id": ["1234", "5678"] } or { "user_id": "*" }.
+(finding cid and bid)
+IDOR
+	(or)enter user email in reset password page/register page to get uuid in the response 

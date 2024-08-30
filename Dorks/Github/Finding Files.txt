@@ -1,0 +1,34 @@
+extension: json api.forecast.io
+extension: sql mysql dump
+filename: .bash_history <Domain name>
+filename: .bash_profile aws
+filename: configuration.php JConfig password
+filename: credentials aws_access_key_id filename:id_rsa or filename:id_dsa
+filename: database
+filename: .dockercfg auth
+filename: .env MAIL_HOST=smtp.gmail.com
+filename:.esmtprc password filename: passwd path:etc filename:dbeaver-data-sources.xml
+filename: hub oauth_token
+filename: idea14.key
+filename:manifest.xml
+filename: .npmrc _auth
+filename: .pgpass
+filename: prod.exs NOT prod.secret.exs
+filename: prod.secret.exs
+filename: proftpdpasswd
+filename: secrets.yml password
+filename: sftp-config.json
+filename: sftp.json path:.vscode
+filename: shadow path:etc
+filename:.sh_history
+filename: travis.yml
+filename: vim_settings.xml
+filename:WebServers.xml
+filename:wp-config.php
+# Finding Files
+HEROKU_API_KEY language:json
+HEROKU_API_KEY language: shell
+JEKYLL GITHUB_TOKEN
+path:sites databases password filename:config.php dbpasswd
+SF_USERNAME salesforce
+shodan_api_key language: python

